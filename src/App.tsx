@@ -5,6 +5,9 @@ import Navbar from './components/navbar/Navbar'
 import Home from './pages/home/Home';
 import Footer from './components/footer/Footer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import FormularioCategoria from './components/categorias/formularioCategoria/FormularioCategoria';
+import ListaCategorias from './components/categorias/listaCategorias/ListaCategorias';
+import RemoverCategoria from './components/categorias/removerCategoria/RemoverCategoria';
 
 function App() {
   return (
@@ -16,6 +19,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/categorias" element={<ListaCategorias />} />
+            <Route path="/cadastroCategoria" element={<FormularioCategoria />} />
+            <Route path="/editarCategoria/:id" element={<FormularioCategoria/>} />
+            <Route path="/removerCategoria/:id" element={<RemoverCategoria />} />
           </Routes>
         </div>
         <Footer />

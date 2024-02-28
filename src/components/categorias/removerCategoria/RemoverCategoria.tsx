@@ -44,17 +44,17 @@ function RemoverCategoria() {
 
     return (
       <div className='container w-1/3 mx-auto'>
-        <h1 className='text-4xl text-center my-4 text-white'>Deletar Tema</h1>
+        <h1 className='text-4xl text-center py-4 text-white'>Remover Categoria</h1>
   
-        <p className='text-center font-semibold mb-4 text-white'>Você deseja apagar o tema selecionado?</p>
+        <p className='text-center font-semibold mb-4 text-white'>Você deseja apagar a categoria selecionada?</p>
   
         <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-        <header className='py-2 px-6 bg-green-600 text-white font-bold text-2xl'>{categoria.nome}</header>
-        <p className='p-8 text-3xl bg-lime-400 h-full text-white'>{categoria.descricao}</p>
+        <header className='py-2 px-6 bg-blue-600 text-white font-bold text-2xl'>{categoria.nome}</header>
+        <p className='p-8 text-3xl bg-blue-400 h-full text-white'>{categoria.descricao}</p>
         <div className="flex">
-          <button className='text-white bg-lime-500 hover:bg-lime-800 w-full py-2' onClick={retornar}>Voltar</button>
+          <button className='text-white bg-blue-500 hover:bg-blue-800 w-full py-2' onClick={retornar}>Voltar</button>
           <button className='w-full text-white bg-red-500 hover:bg-red-800 flex items-center justify-center' onClick={deletarCategoria}>
-            Apagar Tema
+            Apagar Categoria
           </button>
         </div>
       </div>
