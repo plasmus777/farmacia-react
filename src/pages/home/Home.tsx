@@ -1,4 +1,4 @@
-export function Home(){
+function Home(){
     return (
         <>
           <div className="bg-blue-300 flex justify-center aspect-auto">
@@ -17,4 +17,4 @@ export function Home(){
       )
 }
   
-  export default Home
+export default Home
