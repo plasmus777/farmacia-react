@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import Categoria from "../../../models/Categoria";
 import { buscar } from "../../../services/Service";
-import { DNA } from "react-loader-spinner";
 import CartaoCategoria from "../cartaoCategoria/CartaoCategoria";
 import { Plus } from "@phosphor-icons/react";
 import { toastAlerta } from "../../../util/toastAlerta";
 import { Link } from "react-router-dom";
+import { Hourglass } from "react-loader-spinner";
 
 function ListaCategorias() {
     const [categorias, setCategorias] = useState<Categoria[]>([]);
@@ -25,14 +25,14 @@ function ListaCategorias() {
     return (
         <>
             {categorias.length === 0 && (
-                <DNA
-                    visible={true}
-                    height="200"
-                    width="200"
-                    ariaLabel="dna-loading"
-                    wrapperStyle={{}}
-                    wrapperClass="dna-wrapper mx-auto"
-                />
+                <Hourglass
+                visible={true}
+                height="200"
+                width="200"
+                ariaLabel="hourglass-loading"
+                wrapperStyle={{}}
+                wrapperClass="hourglass-wrapper mx-auto"
+            />
             )}
             <div className="flex justify-center w-full py-4">
                 <div className="container flex flex-col">

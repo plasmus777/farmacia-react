@@ -90,14 +90,14 @@ function FormularioCategoria() {
                     />
                 </div>
                 <button
-                    className="rounded text-white-100 bg-blue-400 hover:bg-blue-800 w-1/2 py-2 mx-auto block"
+                    className="rounded text-white bg-blue-400 hover:bg-blue-800 w-1/2 py-2 mx-auto block"
                     type="submit"
                 >
                     {id === undefined ? 'Cadastrar' : 'Editar'}
                 </button>
             </form>
 
-            <button className="rounded text-white-100 bg-blue-400 hover:bg-blue-800 w-1/4 py-2 mx-auto block mt-4" onClick={retornar}>Voltar</button>
+            <button className="rounded text-white bg-blue-400 hover:bg-blue-800 w-1/4 py-2 mx-auto block mt-4" onClick={retornar}>Voltar</button>
         </div>
     );
 }

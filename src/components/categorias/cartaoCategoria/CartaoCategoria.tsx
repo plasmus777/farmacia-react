@@ -11,7 +11,7 @@ function CartaoCategoria({categoria}: CartaoCategoriaProps) {
         <header className='py-2 px-6 bg-blue-800 text-white font-bold text-2xl'>{categoria.nome}</header>
         <p className='p-8 text-3xl bg-blue-500 h-full text-white'>{categoria.descricao}</p>
         <div className="flex">
-          <Link to={`/editarCategoria/${categoria.id}`} className='w-full text-white bg-green-400 hover:bg-green-800 flex items-center justify-center py-2'>
+          <Link to={`/editarCategoria/${categoria.id}`} className='w-full text-white bg-blue-600 hover:bg-blue-800 flex items-center justify-center py-2'>
             <button>Editar</button>
           </Link>
           <Link to={`/removerCategoria/${categoria.id}`} className='text-white bg-red-500 hover:bg-red-700 w-full flex items-center justify-center'>
